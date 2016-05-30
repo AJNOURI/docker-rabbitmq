@@ -20,12 +20,8 @@ RUN chmod +x /scripts/*.sh
 RUN touch /.firstrun
 
 # Command to run
-ENTRYPOINT ["/scripts/run.sh"]
-CMD [""]
-
-# Expose listen port
-EXPOSE 5672
-EXPOSE 15672
+#ENTRYPOINT ["/scripts/run.sh"]
+#/scripts/run.sh to run manually
 
 # Expose our log volumes
 VOLUME ["/var/log/rabbitmq"]
